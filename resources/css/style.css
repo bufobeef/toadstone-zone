@@ -1,0 +1,229 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+body {
+  text-align: center;
+  background-color: #E5FF00;
+  color: black;
+  font-family: Verdana;
+}
+
+.middle {
+  text-align: center;
+  position: fixed;
+  top: 200px;
+  left: 25%;
+  margin: 4px, 4px;
+  padding: 12px;
+  background-color: #E5FF00;
+  border: 12px solid #433421;
+  border-radius: 30px;
+  width: 60%;
+  bottom: 200px;
+  overflow-x: auto;
+  overflow-y: auto;
+  text-align: justify;
+}
+
+.marquee {
+  gap: 1rem;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  position: fixed;
+  top: 0px;
+  right: 8px;
+  left: 8px;
+  background-color: #433421;
+}
+
+.marquee-content {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  min-width: 100%;
+  gap: 1rem;
+  animation: scroll 20s linear infinite;
+  color: #e5ff00;
+  font-size: 60px;
+  font-weight: bold;
+  flex: 0 0 auto;
+  margin: 2px;
+  padding: 0rem 0rem;
+  text-align: center;
+}
+
+.marquee2 {
+  gap: 1rem;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  margin-top: 69px;
+  margin-bottom: 0px;
+  position: fixed;
+  background-color: #e5ff00;
+  border-bottom: 12px solid #433421;
+}
+
+.marquee-content2 {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  min-width: 100%;
+  gap: 1rem;
+  animation: scroll 20s linear infinite reverse;
+  color: #433421;
+  font-size: 60px;
+  font-weight: bold;
+  flex: 0 0 auto;
+  margin: 2px;
+  padding: 0rem 0rem;
+  text-align: center;
+}
+
+
+.marquee3 {
+  gap: 1rem;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  z-index: 2;
+  bottom: 77px;
+  left: 8px;
+  right: 8px;
+  position: fixed;
+  background-color: #e5ff00;
+  border-top: 12px solid #433421;
+  -moz-transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+
+.marquee-content3 {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  min-width: 100%;
+  gap: 1rem;
+  animation: scroll 20s linear infinite reverse;
+  color: #433421;
+  font-size: 60px;
+  font-weight: bold;
+  flex: 0 0 auto;
+  margin: 2px;
+  padding: 0rem 0rem;
+  text-align: center;
+}
+
+.marquee4 {
+  gap: 1rem;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  position: fixed;
+  bottom: 0px;
+  left: 8px;
+  right: 8px;
+  background-color: #433421;
+  -moz-transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+
+.marquee-content4 {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  min-width: 100%;
+  gap: 1rem;
+  animation: scroll 20s linear infinite;
+  color: #e5ff00;
+  font-size: 60px;
+  font-weight: bold;
+  flex: 0 0 auto;
+  margin: 2px;
+  padding: 0rem 0rem;
+  text-align: center;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 1rem));
+  }
+}
+
+.buttons {
+  position: relative;
+  top: 150px;
+  left: 10%;
+  margin: 4px, 4px;
+  padding: 4px;
+  height: 80%;
+  width: 20%;
+}
+
+.button1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  text-decoration: none;
+  color: #433421;
+  font-size: 18px;
+  border-radius: 0px;
+  width: 200px;
+  height: 40px;
+  font-weight: bold;
+  border: 2px solid #433421;
+  transition: 0.2s;
+  box-shadow: 11px 11px 0px 0px #433421, -11px -11px 0px 0px #433421;
+  background-color: #e5ff00;
+  margin-top: 24px;
+  position: relative;
+}
+
+.button1:hover {
+  box-shadow: -11px 11px 0px 0px #433421, 11px -11px 0px 0px #433421;
+  color: #E5FF00;
+  background-color: #433421;
+  border: 2px solid #E5FF00;
+}
+
+.button2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  text-decoration: none;
+  color: #433421;
+  font-size: 18px;
+  border-radius: 0px;
+  width: 200px;
+  height: 40px;
+  font-weight: bold;
+  border: 2px solid #433421;
+  transition: 0.2s;
+  box-shadow: -11px 11px 0px 0px #433421, 11px -11px 0px 0px #433421;
+  background-color: #e5ff00;
+  margin-top: 24px;
+  position: relative;
+}
+
+.button2:hover {
+  box-shadow: 11px 11px 0px 0px #433421, -11px -11px 0px 0px #433421;
+  color: #E5FF00;
+  background-color: #433421;
+  border: 2px solid #E5FF00;
+}
